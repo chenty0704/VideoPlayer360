@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/VideoPlayer.uss?fileID=7433441132597879392&amp;guid=45a84bcad05da084cb50c3f1e7559e29&amp;type=3#VideoPlayer" />
+    <ui:VisualElement name="Panel" class="panel">
+        <ui:SliderInt name="TimeSlider" class="time-slider">
+            <ui:Label name="Overlay" picking-mode="Ignore" text="0:00" class="label time-slider__overlay" />
+        </ui:SliderInt>
+        <ui:VisualElement name="ActionRow" picking-mode="Ignore" class="action-row">
+            <ui:VisualElement name="LeftGroup" picking-mode="Ignore" class="action-row__group">
+                <ui:Button name="PlayPauseButton" class="button" style="background-image: url(&apos;project://database/Assets/UI/Icons/Pause.svg?fileID=7388822144124034973&amp;guid=1495a547b94652f4b9f8f4a8dd4ec04d&amp;type=3#Pause&apos;);" />
+                <ui:Label name="TimeLabel" picking-mode="Ignore" text="0:00 / 0.00" class="label time-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="RightGroup" picking-mode="Ignore" class="action-row__group">
+                <ui:Button name="FullScreenButton" class="button" style="background-image: url(&apos;project://database/Assets/UI/Icons/EnterFullScreen.svg?fileID=7388822144124034973&amp;guid=b86df073260173346b81d481fb0e19a7&amp;type=3#EnterFullScreen&apos;);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="ActionOverlays" picking-mode="Ignore" class="action-overlays">
+        <ui:VisualElement name="PlayPauseOverlay" picking-mode="Ignore" class="overlay overlay--center action-overlay" style="padding: 15px;">
+            <ui:VisualElement name="Icon" picking-mode="Ignore" class="action-overlay__icon" style="background-image: url(&apos;project://database/Assets/UI/Icons/Pause.svg?fileID=7388822144124034973&amp;guid=1495a547b94652f4b9f8f4a8dd4ec04d&amp;type=3#Pause&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="SeekBackwardOverlay" picking-mode="Ignore" class="overlay overlay--left action-overlay" style="padding: 10px;">
+            <ui:VisualElement name="Icon" picking-mode="Ignore" class="action-overlay__icon" style="background-image: url(&apos;project://database/Assets/UI/Icons/SeekBackward.svg?fileID=7388822144124034973&amp;guid=d0557853155965640b54647c90bf1a61&amp;type=3#SeekBackward&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="SeekForwardOverlay" picking-mode="Ignore" class="overlay overlay--right action-overlay" style="padding: 10px;">
+            <ui:VisualElement name="Icon" picking-mode="Ignore" class="action-overlay__icon" style="background-image: url(&apos;project://database/Assets/UI/Icons/SeekForward.svg?fileID=7388822144124034973&amp;guid=5bf15dd093ddd1841ba3d0e73de45cdc&amp;type=3#SeekForward&apos;);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="LoadingOverlay" picking-mode="Ignore" class="loading-overlay">
+        <ui:VisualElement name="ProgressOverlay" picking-mode="Ignore" class="overlay overlay--center" style="background-image: url(&apos;project://database/Assets/UI/Icons/Progress.svg?fileID=7388822144124034973&amp;guid=181aeeb6ed4d27c4b9f5e6cbb2c1ea76&amp;type=3#Progress&apos;);" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,51 @@
+.text-field {
+    align-self: center;
+    width: 60%;
+    height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: white;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 20px;
+    --unity-cursor-color: black;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.text-field:hover {
+    background-color: whitesmoke;
+}
+
+.text-field:focus {
+    background-color: white;
+    border-color: cornflowerblue;
+    border-width: 2px;
+}
+
+.text-field__cursor--hide {
+    --unity-cursor-color: rgba(255, 255, 255, 0);
+}
+
+.text-field > #unity-text-input {
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 0;
+}
+
+.notification {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    font-size: 16px;
+    translate: -50% 0;
+}
+
+.notification--show {
+    display: flex;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}

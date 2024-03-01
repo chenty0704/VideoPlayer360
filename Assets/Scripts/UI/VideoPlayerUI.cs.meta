@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e6bbc1a9a41a6054dbbaf53e497079e4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - <Controller>k__BackingField: {instanceID: 0}
+  - playIcon: {fileID: 7388822144124034973, guid: fdf812e35662a2c44a59143a6c921a7b, type: 3}
+  - pauseIcon: {fileID: 7388822144124034973, guid: 1495a547b94652f4b9f8f4a8dd4ec04d, type: 3}
+  - enterFullScreenIcon: {fileID: 7388822144124034973, guid: b86df073260173346b81d481fb0e19a7, type: 3}
+  - exitFullScreenIcon: {fileID: 7388822144124034973, guid: 4d1a64403f932f545b3e5ee3657b067b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

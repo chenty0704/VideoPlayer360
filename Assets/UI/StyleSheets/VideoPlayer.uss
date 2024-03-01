@@ -1,0 +1,159 @@
+:root {
+    --theme-color: red;
+    --text-color: rgb(229, 229, 229);
+}
+
+.label {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: var(--text-color);
+    -unity-background-scale-mode: scale-to-fit;
+    border-width: 0;
+}
+
+.button:hover {
+    -unity-background-image-tint-color: white;
+}
+
+.overlay {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    translate: -50% 0;
+}
+
+.overlay--center {
+    left: 50%;
+}
+
+.overlay--left {
+    left: 10%;
+}
+
+.overlay--right {
+    left: 90%;
+}
+
+.panel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.95);
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.time-slider {
+    min-height: 0;
+    margin: 0;
+}
+
+.time-slider #unity-drag-container {
+    overflow: hidden;
+    height: 5px;
+}
+
+.time-slider #unity-drag-container:hover {
+    scale: 1 1.5;
+}
+
+.time-slider #unity-tracker {
+    position: relative;
+    top: 0;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-width: 0;
+}
+
+.time-slider #unity-dragger {
+    top: 0;
+    height: 100%;
+    margin: 0;
+    background-color: var(--theme-color);
+    border-width: 0;
+}
+
+.time-slider__fill {
+    align-self: flex-end;
+    width: 1920px;
+    height: 100%;
+    background-color: var(--theme-color);
+}
+
+.time-slider__overlay {
+    opacity: 0;
+    position: absolute;
+    bottom: 5px;
+    width: 60px;
+    -unity-text-align: middle-center;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.action-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.action-row__group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.time-label {
+    margin: 0 10px;
+    -unity-text-align: middle-center;
+}
+
+.action-overlays {
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.action-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.action-overlay--show {
+    display: flex;
+    opacity: 0;
+    scale: 2;
+    transition-property: opacity, scale;
+    transition-duration: 1s, 1s;
+}
+
+.action-overlay__icon {
+    flex-grow: 1;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.loading-overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.progress-overlay--rotate {
+    rotate: 360deg;
+    transition-property: rotate;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
